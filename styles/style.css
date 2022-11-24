@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --clr-white: #f4f2f2;
+  --clr-gray: #384d48;
+  --clr-nickel: #6e7271;
+  --clr-green: #acad94;
+  --clr-light-gray: #d8d4d5;
+  --clr-platinum: #e2e2e2;
+  --clr-blue: #4281a4;
+  --clr-verdigris: #48a9a6;
+  --clr-timberwolf: #e4dfda;
+  --clr-tan: #d4b483;
+  --clr-fuzzy: #c1666b;
+  --clr-black: #262525;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--clr-gray);
+  height: 100vh;
+  background-image: url(../images/BG\ img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.card-container {
+  width: 400px;
+  background-color: transparent;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3), -5px -5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.title {
+  color: var(--clr-light-gray);
+}
+
+.para {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.score {
+  color: gold;
+  /* background-color: orangered; */
+}
+
+.random-number {
+  border: 2px solid var(--clr-tan);
+  padding: 3px 2.25rem;
+  font-weight: bold;
+  margin-top: -0.5rem;
+}
+
+.user-input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  padding: 8px 25px;
+  border-radius: 7px;
+  background-color: rgb(72, 72, 251);
+  border: none;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.btn:hover {
+  background-color: blue;
+  transition: 0.3s;
+}
+
+.error-msg {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #9e0202;
+  display: none;
+}
